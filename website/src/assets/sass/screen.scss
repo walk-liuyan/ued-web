@@ -1,0 +1,65 @@
+$fa-font-path:        "//img.hidoge.cn/font-awesome/4.7.0/fonts/" !default;
+@import "~font-awesome/scss/font-awesome";
+@import "~github-markdown-css/github-markdown.css";
+
+@import "lib/mixin";
+@import "lib/spacing";
+@import "lib/color";
+@import "lib/useful_class";
+@import "lib/rounded";
+@import "lib/extra_reset";
+@import "lib/ie_warning";
+@import "theme";
+.flex{
+  display: flex;
+}
+.container{
+  width: 90%;
+  @extend %auto;
+  @include clearfix();
+}
+.box_shadow{
+  box-shadow: 0 1px 1px black(.08);
+}
+.page_header{
+  .ivu-menu-horizontal{
+    height: 80px;
+    line-height: 80px;
+    &.ivu-menu-light{
+      &:after{
+        background: none !important;
+      }
+    }
+  }
+}
+.ivu-menu{
+  a{
+    color: #657180;
+  }
+  .ivu-menu-item-active a, .ivu-menu-item-selected a {
+    color: #3399ff;
+  }
+}
+.qiniu-upload {
+  display:block;
+  width: 102px;
+  height:102px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border:2px dashed #ddd;
+  overflow: hidden;
+  cursor: pointer;
+  input[type="file"] {
+    display: none;
+  }
+  em{
+    font-style: normal;
+    text-align: center;
+    display:block;
+  }
+}
+.spin-auto{
+  width: 102px;
+  height: 102px;
+  position: relative;
+}

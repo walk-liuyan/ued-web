@@ -1,0 +1,79 @@
+.navigator_bar{
+  overflow: visible;
+  z-index:1;
+  background:#6bb756 linear-gradient(to right, rgba(107,183,86,0.95), rgba(0,143,104,0.95));
+  padding-bottom: 10px;
+  ul{
+    li{
+      padding-top: 10px;
+      line-height: 30px;
+      a{
+        &:hover{
+          color: #fff;
+          opacity: .75;
+        }
+      }
+    }
+  }
+  .ivu-input-wrapper{
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px inset;
+    background-color: rgba(0, 20, 0, 0.1)
+  }
+  .ivu-input{
+    border-right: none;
+  }
+  .ivu-input-group-append{
+    border-left: none;
+  }
+  .ivu-input,.ivu-input-group-append{
+    border-color: rgba(0, 40, 0, 0.1);
+    background: none;
+    color: #fff;
+  }
+}
+.face_area{
+  background: #6bb756 linear-gradient(to right, rgba(107,183,86,0.95), rgba(0,143,104,0.95));
+  clip-path: polygon(50% 0%, 100% 0, 100% 65%, 50% 100%, 0 65%, 0 0);
+  .doge{
+    border-radius: 10px;
+    border: 2px solid rgba(249, 236, 49, 1.0);
+    &:hover{
+      animation: colorrr 10s infinite;
+    }
+  }
+  h1{
+    line-height: 38px;
+    text-shadow: 0 0 14px rgba(0,0,0,0.28);
+  }
+  p{
+    text-shadow: 0 0 14px rgba(0,0,0,0.28);
+  }
+}
+.contact{
+  background: rgba(114,186,94,0.05);
+  clip-path: polygon(0 0px, 100% 100px, 100% 100%, 0px 100%);
+  padding: 100px 0 30px;
+}
+.markdown-body{
+  li{
+    list-style: inherit;
+  }
+  ol{
+    list-style: decimal;
+  }
+}
+.btn_remove{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}
+@keyframes colorrr {
+  0% {
+    filter: hue-rotate(0deg)
+  }
+  50% {
+    filter: hue-rotate(360deg)
+  }
+}
